@@ -38,6 +38,7 @@ function reducer(state, { type, PLD }) {
       return {  // Append the digit to the current operand
         ...state,
         COP: `${state.COP || ""}${PLD.digit}`,
+        // If state.COP is not already set, it will default to an empty string before appending the digit.
       }
     case DUTIES.OPERATIONCHOOSE:
       if (state.COP == null 
