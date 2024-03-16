@@ -62,7 +62,7 @@ function reducer(state, { type, PLD }) {
           COP: null,
         }
       }
-
+// + +  * 
       return {
         ...state,
         POPR: evaluate(state), // Evaluate the expression and update the state
